@@ -11,6 +11,7 @@ return {
     vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = 'Telescope live grep' })
     vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
     vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = 'Telescope buffers' })
+    vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = 'Telescope [S]earch Vim [H]elp' })
     vim.keymap.set('n', '<leader>sn', function()
       builtin.find_files { cwd = vim.fn.stdpath 'config' }
     end, { desc = '[S]earch [N]eovim files' })
