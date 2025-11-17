@@ -34,6 +34,10 @@ vim.o.swapfile = false
 -- No backup, I dont need
 vim.o.backup = false
 
+-- Best search settings :)
+vim.opt.smartcase = true
+vim.opt.ignorecase = true
+
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.o.hlsearch = false
 vim.o.incsearch = true
@@ -66,7 +70,10 @@ vim.o.cursorline = true
 
 vim.o.scrolloff = 8
 
-vim.o.confirm = true
+vim.opt.more = false
+
+vim.opt.title = true
+vim.opt.titlestring = '%t%( %M%)%( (%{expand("%:~:h")})%)%a (nvim)'
 
 -- netrw config
 vim.g.netrw_browse_split = 0
